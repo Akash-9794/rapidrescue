@@ -6,8 +6,7 @@
   scroll-behavior: smooth;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -60,7 +59,7 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  background-color: #2166cc;
+  background-color:#2166cc;
 }
 
 .navElement ul li {
@@ -82,7 +81,6 @@ body {
   border: 2px solid blue;
   border-radius: 10px;
   scale: 1.5;
-  cursor: pointer;
 }
 
 .video-container {
@@ -102,14 +100,14 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   /* filter: blur(1px) ; Apply the blur effect here */
-  z-index: -1; /* Ensure the videos are behind other content */
+  z-index: -1; /* Ensure the videos are behind other content */ 
 }
 
 .video.active {
   opacity: 1;
 }
 
-.content {
+.content{
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -118,71 +116,72 @@ body {
   display: flex;
   position: relative;
 }
-.contentHead {
+.contentHead{
   height: 75vh;
   width: 32vw;
   /* background: rgb(201, 124, 124); */
   /* margin:2vw; */
   padding: 2vw;
 }
-.contnt {
+.contnt{
   height: 100%;
-  width: 100%;
+  width: 100% ;
   /* background: rgb(135, 135, 219); */
 }
-.contnt h1 {
+.contnt h1{
   font-family: sans-serif;
   font-size: 33px;
   margin: 0 0 8px;
   text-align: center !important;
   font-weight: 900;
   line-height: 2.5vw;
-  color: yellow;
+  color: yellow
 }
-#anime {
+#anime{
   color: blueviolet;
 }
-.contnt h2 {
+.contnt h2{
   margin: 0px 0px 24px;
   font-size: 20px;
   color: #2166cc;
   text-align: center !important;
 }
 
-.contnt p {
+.contnt p{
   margin: opx opx 24px;
   color: rgb(219, 219, 68) !important;
   text-align: center !important;
-  line-height: 2vw;
+  line-height: 2vw
+  
 }
 
-.contnt button {
+.contnt button{
   width: 90%;
   height: 6vh;
   padding: 8px 16px;
   margin: 6.5px 20.623px 0px 20.7893px;
-  border: 2px solid #2166cc;
+  border:  2px solid #2166cc;
   border-radius: 10px;
   font-size: 16px;
 }
 
-.contnt button:hover {
+.contnt button:hover{
   background-color: #2166cc;
   color: white;
   letter-spacing: 5px;
 }
 
-.para {
+.para{
   font-size: 16px;
   margin: 5px 0;
 }
-.contnt h3 {
+.contnt h3{
   margin: 0px 15px;
   font-size: 16px;
   color: #2166cc;
   text-align: center !important;
 }
-#map {
+#map{
   margin: 2vw 2vw;
   margin-right: 5px;
   height: 80vh;
@@ -269,7 +268,7 @@ body {
   background-color: #183e8b;
 }
 
-.page2 {
+.page2{
   height: 100%;
   width: 100%;
   /* background:  rgba(71, 68, 68, 0.8); */
@@ -278,54 +277,54 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: saturation;
-  backface-visibility: visible;
-  object-fit: cover;
+  backface-visibility:visible ;
+  object-fit:cover;  
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  
 }
 
-.page2-box {
+.page2-box{
   height: 52vh;
   width: 85vw;
   margin: 0 50px;
   margin-top: 5vh;
   background: rgb(241, 241, 5);
-
+  
   display: flex;
   border-radius: 15px;
   box-shadow: #866e6e;
 }
-.img {
-  height: 40vh;
+.img{
+  height:40vh;
   width: 40vw;
   /* background-color: blue; */
   display: flex;
   padding: 9vh 0vh;
 }
-.img-content {
+.img-content{
   height: 50vh;
   width: 50vw;
   /* background: blueviolet; */
   padding: 5px 5vw;
+  
 }
-.img-content h2 {
+.img-content h2{
   font-size: 26px;
-  text-transform: uppercase;
+  text-transform:uppercase;
   padding: 3vh 0vh;
   padding-top: 8vh;
   text-align: start;
 }
-.img-content p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.img-content p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 21px;
   font-weight: 500;
   line-height: 4vh;
   color: rgb(43, 36, 36);
 }
-.page3 {
+.page3{
   height: auto;
   width: 100%;
   background: #1a1a1a;
@@ -337,20 +336,22 @@ body {
   position: relative;
 }
 
+
+
 canvas {
   -ms-touch-action: auto;
-  touch-action: auto;
+      touch-action: auto;
   margin-bottom: -1em;
 }
 
 #wrapper-canvas {
   z-index: -10;
   pointer-events: scroll;
-  height: 60vh;
-  width: 100%;
+  height:60vh;
+  width:100%
 }
 
-.car {
+.car{
   height: 30vh;
   width: 20vw;
   position: absolute;
@@ -366,32 +367,33 @@ canvas {
   animation-fill-mode: forwards;
   animation-delay: 2s;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction:normal;
   animation-timing-function: ease-in-out;
 }
-@keyframes carAnime {
-  0% {
+@keyframes carAnime{
+  0%{
     left: 0;
     scale: 0.5;
   }
-  50% {
+  50%{
     left: 35%;
     scale: 1;
     zoom: 1;
   }
-  70% {
-    left: 63%;
-    scale: 0.7;
+  70%{
+    left:63%;
+    scale:0.7;
     z-index: 20;
   }
-  100% {
+  100%{
     left: 90%;
     scale: 0;
     z-index: 20;
     animation-delay: 2s;
+    
   }
 }
-.ambulence {
+.ambulence{
   height: 30vh;
   width: 20vw;
   position: absolute;
@@ -407,27 +409,29 @@ canvas {
   animation-fill-mode: forwards;
   animation-delay: 7s;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction:normal;
   animation-timing-function: ease-in-out;
 }
-@keyframes ambuAnime {
-  0% {
+@keyframes ambuAnime{
+  0%{
     left: 40%;
-    scale: 0.5;
+    scale:0.5;
   }
-  50% {
+  50%{
     left: 65%;
     scale: 1;
     z-index: 40;
   }
-  100% {
+  100%{
     left: 90%;
     scale: 0.2;
     z-index: 50;
   }
 }
 
-.doctor {
+
+
+.doctor{
   height: 40vh;
   width: 35vw;
   position: absolute;
@@ -440,6 +444,7 @@ canvas {
   z-index: 5;
   background-image: url(./assests/hospital.png);
 }
+
 
 /* footer */
 .footer {
@@ -556,99 +561,5 @@ canvas {
   }
   100% {
     background-positon-x: 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-  .contentHead {
-    width: 100%;
-  }
-  .contnt {
-    margin-left: -4vh;
-    width: 100%;
-  }
-  .contnt h1 {
-    font-size: 20px;
-    line-height: 0.8;
-  }
-  .contnt h2 {
-    font-size: 16px;
-  }
-  .contnt p {
-    font-size: 14px;
-    line-height: 0.8;
-  }
-  .contnt button {
-    font-size: 14px;
-  }
-  .contnt h3 {
-    font-size: 14px;
-  }
-  #map {
-    width: 100%;
-    height: 50vh;
-    margin-left: -4vh;
-  }
-  .hospital-list button {
-    height: fit-content;
-    margin-top: 100px;
-  }
-  .form-container {
-    width: 100%;
-  }
-  .form-container h2 {
-    font-size: 20px;
-  }
-  .form-container form label,
-  .form-container form input {
-    font-size: 14px;
-  }
-  .form-container form button {
-    font-size: 14px;
-  }
-  .page2-box {
-    flex-direction: column;
-    height: 90vh;
-    width: 90vw;
-    margin: 0 20px;
-  }
-  .img {
-    overflow: hidden;
-    margin: auto;
-  }
-  .img-content {
-    height: 50vh;
-    width: 80vw;
-  }
-  .img-content h2 {
-    font-size: 20px;
-  }
-  .img-content p {
-    font-size: 16px;
-  }
-  .footer {
-    padding: 20px 20px;
-  }
-  .social-icon,
-  .menu {
-    flex-direction: row;
-  }
-  .social-icon__link,
-  .menu__link {
-    font-size: 1.5rem;
-  }
-  .navElement {
-    display: none;
-  }
-  .logo {
-    margin-left: 80px;
-    padding-right: 30vw;
-  }
-
-  .video-container {
-    padding-top: 30px;
   }
 }

@@ -1,8 +1,9 @@
-RapidRescue: Emergency Response Web App
+<h1> RapidRescue: Emergency Response Web App </h1>
+[project site is live at https://akash-9794.github.io/rapidrescue/]
 Concept of the Project
 RapidRescue is a web application designed to enhance emergency response efficiency by automatically notifying registered hospitals and clinics about accidents. By leveraging geolocation technology, the app shares the user's location with the nearest ambulance and hospital, facilitating swift and coordinated emergency response. The project aims to save lives by minimizing response times and bridging communication gaps between accident sites and medical services. Key functionalities include accident reporting, automatic location detection, real-time notifications, and proximity prioritization.
 
-Problem Statement
+<h3>Problem Statement</h3>
 Current challenges in emergency response include delayed response times, communication gaps between accident sites and medical services, and inefficiencies in locating the nearest available ambulance and hospital. Addressing these challenges requires the development of RapidRescue, a comprehensive platform that automates notifications and prioritizes proximity to ensure timely medical intervention.
 
 Objective of the Project
@@ -48,7 +49,7 @@ Scalable Solution: A platform that can be expanded to include more hospitals and
 Overall, the probable outcome of RapidRescue is the creation of a dynamic and impactful platform that enhances emergency response efficiency, supports medical services, and ultimately saves lives by ensuring timely and coordinated medical intervention during emergencies.
 
 Installation Instructions
-Clone the Repository: git clone https://github.com/your-username/rapidrescue.git
+Clone the Repository: git clone https://github.com/Akash-9794/rapidrescue.git
 Navigate to the Project Directory: cd rapidrescue
 Install Dependencies: npm install
 Start the Server: node server.js

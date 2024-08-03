@@ -1,0 +1,565 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* #main{
+  height:  100%;
+  width: 100%;
+} */
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  height: 7%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav .logo {
+  height: 100%;
+  width: 30%;
+  color: rgb(105, 82, 82);
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logo h3 {
+  font-size: 4vh;
+  padding-right: 3vw;
+}
+
+.navElement {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navElement ul {
+  display: flex;
+  height: 100%;
+  padding: 0 25px;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color:#2166cc;
+}
+
+.navElement ul li {
+  width: auto;
+  background: yellow;
+  text-decoration: none;
+  color: rgb(105, 82, 82);
+  font-size: 20px;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  gap: 2%;
+  border-radius: 5px;
+  border: 2px solid red;
+}
+
+.navElement ul li:hover {
+  color: rgb(255, 4, 4);
+  border: 2px solid blue;
+  border-radius: 10px;
+  scale: 1.5;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 93vh;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* filter: blur(1px) ; Apply the blur effect here */
+  z-index: -1; /* Ensure the videos are behind other content */ 
+}
+
+.video.active {
+  opacity: 1;
+}
+
+.content{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3vw 5vw;
+  margin-top: 3.7%;
+  display: flex;
+  position: relative;
+}
+.contentHead{
+  height: 75vh;
+  width: 32vw;
+  /* background: rgb(201, 124, 124); */
+  /* margin:2vw; */
+  padding: 2vw;
+}
+.contnt{
+  height: 100%;
+  width: 100% ;
+  /* background: rgb(135, 135, 219); */
+}
+.contnt h1{
+  font-family: sans-serif;
+  font-size: 33px;
+  margin: 0 0 8px;
+  text-align: center !important;
+  font-weight: 900;
+  line-height: 2.5vw;
+  color: yellow
+}
+#anime{
+  color: blueviolet;
+}
+.contnt h2{
+  margin: 0px 0px 24px;
+  font-size: 20px;
+  color: #2166cc;
+  text-align: center !important;
+}
+
+.contnt p{
+  margin: opx opx 24px;
+  color: rgb(219, 219, 68) !important;
+  text-align: center !important;
+  line-height: 2vw
+  
+}
+
+.contnt button{
+  width: 90%;
+  height: 6vh;
+  padding: 8px 16px;
+  margin: 6.5px 20.623px 0px 20.7893px;
+  border:  2px solid #2166cc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contnt button:hover{
+  background-color: #2166cc;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.para{
+  font-size: 16px;
+  margin: 5px 0;
+}
+.contnt h3{
+  margin: 0px 15px;
+  font-size: 16px;
+  color: #2166cc;
+  text-align: center !important;
+}
+#map{
+  margin: 2vw 2vw;
+  margin-right: 5px;
+  height: 80vh;
+  width: 50vw;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3vw 5vw;
+}
+
+.hospital-list {
+  width: 40%;
+  color: white;
+}
+
+.hospital-list button {
+  width: 100%;
+  height: 40px;
+  background-color: #2166cc;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.hospital-list button:hover {
+  background-color: #183e8b;
+}
+
+.hospital-list #results {
+  margin-top: 20px;
+  color: white;
+}
+
+.form-container {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  color: white;
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form label,
+.form-container form input {
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.form-container form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container form button {
+  height: 40px;
+  background-color: #2166cc;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container form button:hover {
+  background-color: #183e8b;
+}
+
+.page2{
+  height: 100%;
+  width: 100%;
+  /* background:  rgba(71, 68, 68, 0.8); */
+  /* padding: 20px 20px; */
+  background-image: url(./assests/healthcare-medical-concept-medicine-doctor-stethoscope-hand-patients-come-to-hospital-background-179931139.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  backface-visibility:visible ;
+  object-fit:cover;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.page2-box{
+  height: 52vh;
+  width: 85vw;
+  margin: 0 50px;
+  margin-top: 5vh;
+  background: rgb(241, 241, 5);
+  
+  display: flex;
+  border-radius: 15px;
+  box-shadow: #866e6e;
+}
+.img{
+  height:40vh;
+  width: 40vw;
+  /* background-color: blue; */
+  display: flex;
+  padding: 9vh 0vh;
+}
+.img-content{
+  height: 50vh;
+  width: 50vw;
+  /* background: blueviolet; */
+  padding: 5px 5vw;
+  
+}
+.img-content h2{
+  font-size: 26px;
+  text-transform:uppercase;
+  padding: 3vh 0vh;
+  padding-top: 8vh;
+  text-align: start;
+}
+.img-content p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 4vh;
+  color: rgb(43, 36, 36);
+}
+.page3{
+  height: auto;
+  width: 100%;
+  background: #1a1a1a;
+  /* padding: 20px 20px; */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+canvas {
+  -ms-touch-action: auto;
+      touch-action: auto;
+  margin-bottom: -1em;
+}
+
+#wrapper-canvas {
+  z-index: -10;
+  pointer-events: scroll;
+  height:60vh;
+  width:100%
+}
+
+.car{
+  height: 30vh;
+  width: 20vw;
+  position: absolute;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  bottom: 40%;
+  left: 5%;
+  background-image: url(./assests/ambulance.png);
+  animation-name: carAnime;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  animation-timing-function: ease-in-out;
+}
+@keyframes carAnime{
+  0%{
+    left: 0;
+    scale: 0.5;
+  }
+  50%{
+    left: 35%;
+    scale: 1;
+    zoom: 1;
+  }
+  70%{
+    left:63%;
+    scale:0.7;
+    z-index: 20;
+  }
+  100%{
+    left: 90%;
+    scale: 0;
+    z-index: 20;
+    animation-delay: 2s;
+    
+  }
+}
+.ambulence{
+  height: 30vh;
+  width: 20vw;
+  position: absolute;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  bottom: 40%;
+  left: 40%;
+  background-image: url(./assests/ambulance.png);
+  animation-name: ambuAnime;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  animation-timing-function: ease-in-out;
+}
+@keyframes ambuAnime{
+  0%{
+    left: 40%;
+    scale:0.5;
+  }
+  50%{
+    left: 65%;
+    scale: 1;
+    z-index: 40;
+  }
+  100%{
+    left: 90%;
+    scale: 0.2;
+    z-index: 50;
+  }
+}
+
+
+
+.doctor{
+  height: 40vh;
+  width: 35vw;
+  position: absolute;
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 45%;
+  right: 5%;
+  z-index: 5;
+  background-image: url(./assests/hospital.png);
+}
+
+
+/* footer */
+.footer {
+  height: auto;
+  position: relative;
+  width: 95%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}

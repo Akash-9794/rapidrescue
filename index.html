@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,141 +9,152 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <div id="main">
-      <div class="nav">
-        <div class="logo">
-          <img src="assests/icons8-ambulance.gif" alt="">
-          <h3>RapidRescue</h3>
-        </div>
-        <div class="navElement">
-          <ul>
-            <li>Home</li>
-            <li>Ambulance</li>
-            <li>Join Us</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Gallery</li>
-            <li>Call_Now</li>
-          </ul>
-        </div>
+  <div id="main">
+    <div class="nav">
+      <div class="logo">
+        <img src="assests/icons8-ambulance.gif" alt="">
+        <h3>RapidRescue</h3>
       </div>
-      <div class="video-container">
-        <video class="video" loop muted>
-          <source src="backgroundVedios\videoplayback.mp4" type="video/mp4">
-        </video>
-        <video class="video" loop muted>
-          <source src="backgroundVedios\8943640-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <video class="video" loop muted>
-          <source src="backgroundVedios\6688266-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <video class="video" loop muted>
-          <source src="backgroundVedios\6688265-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <video class="video" loop muted>
-          <source src="backgroundVedios\6688262-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <video class="video" loop muted>
-          <source src="backgroundVedios\5914844-uhd_3840_2160_30fps.mp4" type="video/mp4">
-        </video>
-        <div class="content">
-          <div class="contentHead">
-            <div class="contnt">
-              <h1>24/7 Emergency Ambulance Care with RapidRescue</h1>
-              <h1 id="anime">Anytime</h1> 
-              <h2>For Emergency Medical Service</h2>
-              <p>Help / Rescues the Patient in case of the Emergency situation by doing just a click. Medulance Ambulance comes right in front of the door for help</p>
-              <button>BOOK NOW</button>
-              <p class="para">or</p>
-              <h3>Call Our Assistance</h3>
-              <button>+91 9895786526 </button>
+      <div class="navElement">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Ambulance</a></li>
+          <li><a href="#page2">Join Us</a></li>
+          <li><a href="#page3">About Us</a></li>
+          <li><a href="#page3">Contact Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="tel:+919895786526">Call Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-container" id="home">
+      <video class="video" loop muted>
+        <source src="backgroundVedios\videoplayback.mp4" type="video/mp4">
+      </video>
+      <video class="video" loop muted>
+        <source src="backgroundVedios\8943640-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <video class="video" loop muted>
+        <source src="backgroundVedios\6688266-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <video class="video" loop muted>
+        <source src="backgroundVedios\6688265-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <video class="video" loop muted>
+        <source src="backgroundVedios\6688262-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <video class="video" loop muted>
+        <source src="backgroundVedios\5914844-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <div class="contentHead">
+          <div class="contnt">
+            <h1>24/7 Emergency Ambulance Care with RapidRescue</h1>
+            <h1 id="anime">Anytime</h1>
+            <h2>For Emergency Medical Service</h2>
+            <p>Help / Rescues the Patient in case of the Emergency situation by doing just a click. Medulance Ambulance
+              comes right in front of the door for help</p>
+            <button>BOOK NOW</button>
+            <p class="para">or</p>
+            <h3>Call Our Assistance</h3>
+            <button>+91 9895786526 </button>
+          </div>
+        </div>
+        <div id="map">
+          <div class="content-head">
+            <div class="hospital-list">
+              <button id="find-hospitals">Find Nearest Hospitals</button>
+              <div id="results"></div>
+            </div>
+            <div class="form-container">
+              <form id="hospital-form">
+                <h2>Update Hospital Information</h2>
+                <label for="name">Hospital Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <button type="submit">Submit</button>
+              </form>
             </div>
           </div>
-          <div id="map">
-            <div class="content-head">
-              <div class="hospital-list">
-                <button id="find-hospitals">Find Nearest Hospitals</button>
-                <div id="results"></div>
-              </div>
-              <div class="form-container">
-                <form id="hospital-form">
-                  <h2>Update Hospital Information</h2>
-                  <label for="name">Hospital Name:</label>
-                  <input type="text" id="name" name="name" required>
-                  <label for="phone">Phone Number:</label>
-                  <input type="text" id="phone" name="phone" required>
-                  <button type="submit">Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="page2">
-        <!-- <img src="./assests/page3Image.jpg" alt=""> -->
-        <div class="page2-box">
-          <div class="img"><img src="./assests/4511028.webp" alt=""></div>
-          <div class="img-content">
-            <h2>Partner with Us</h2>
-            <p id="span2">Partner with GoAid and join our mission to provide top-notch ambulance services and medical care. Whether you’re a hospital, a corporate entity, or an individual, we offer a range of partnership opportunities. Together, we can make a difference in the lives of those in need of emergency medical assistance. Let’s collaborate and make an impact!</p>
-          </div>
+    </div>
+    <div class="page2" id="page2">
+      <!-- <img src="./assests/page3Image.jpg" alt=""> -->
+      <div class="page2-box">
+        <div class="img"><img src="./assests/4511028.webp" alt=""></div>
+        <div class="img-content">
+          <h2>Partner with Us</h2>
+          <p id="span2">Partner with GoAid and join our mission to provide top-notch ambulance services and medical
+            care. Whether you’re a hospital, a corporate entity, or an individual, we offer a range of partnership
+            opportunities. Together, we can make a difference in the lives of those in need of emergency medical
+            assistance. Let’s collaborate and make an impact!</p>
         </div>
       </div>
-      <div class="page3">
-        <div id="wrapper-canvas"></div>
-        <div class="ambulence">
+    </div>
+    <div class="page3" id="page3">
+      <div id="wrapper-canvas"></div>
+      <div class="ambulence">
       </div>
-        <div class="car"></div>
-        <div class="doctor">
+      <div class="car"></div>
+      <div class="doctor">
       </div>
-        <footer class="footer">
-          <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-          </div>
-          <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a></li>
-          </ul>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-      
-          </ul>
-          <p>&copy;2024 RapidRescue | All Rights Reserved</p>
-        </footer>
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
         </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2024 RapidRescue | All Rights Reserved</p>
+      </footer>
+    </div>
   </div>
   </div>
 
-  
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     <!-- Matter JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Matter JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="script.js"></script>
+
 </body>
+
 </html>
